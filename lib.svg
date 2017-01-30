@@ -1,0 +1,100 @@
+<svg width="400" height="800" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <rect id="box30x10" style="fill:none;stroke:black;stroke-width:1" x="0.5" y="0.5" width="30" height="10"/>
+  <rect id="box30x30" style="fill:none;stroke:black;stroke-width:1" x="0.5" y="0.5" width="30" height="30"/>
+  <circle r="2" style="fill:blue;stroke:blue;" id="junction"/>
+  <g width="30" height="10" id="connector">
+    <path style="fill:none;stroke:black;stroke-width:1" d="M10.5,5.5 a3,3,0,0,1,-6,0 a3,3,0,0,1,6,0 h20"/>
+  </g>
+  <g width="30" height="10" id="connector1">
+    <path style="fill:none;stroke:black;stroke-width:1" d="M10.5,5.5 l-3,-3 m0,6 l3,-3 h20"/>
+  </g>
+  <g width="30" height="10" id="connector2">
+    <path style="fill:none;stroke:black;stroke-width:1" d="M7.5,5.5 l3,-3 m0,6 l-3,-3 h23"/>
+  </g>
+  <g width="30" height="10" id="button-open">
+    <path style="fill:none;stroke:black;stroke-width:1" d="M0.5,5.5 h7 a1.5,1.5,0,0,1,3,0 a1.5,1.5,0,0,1,-3,0 m3,0 l10,-5 m0,3 v2 h10"/>
+  </g>
+  <g width="30" height="10" id="button-closed">
+    <path style="fill:none;stroke:black;stroke-width:1" d="M0.5,5.5 h7 a1.5,1.5,0,0,1,3,0 a1.5,1.5,0,0,1,-3,0 m3,0 l12,-3 m-2,-2 v5 h10"/>
+  </g>
+  <g width="30" height="10" id="switch3">
+    <path style="fill:none;stroke:black;stroke-width:1" d="M0.5,5.5 h7 a1.5,1.5,0,0,1,3,0 a1.5,1.5,0,0,1,-3,0 m3,0 l7,-2 m-2,-3 a1.5,1.5,0,0,1,3,0 a1.5,1.5,0,0,1,-3,0 m3,0 h7 m-10,10 a1.5,1.5,0,0,1,3,0 a1.5,1.5,0,0,1,-3,0 m3,0 h7"/>
+  </g>
+  <g width="30" height="10" id="resistor">
+    <path style="fill:none;stroke:black;stroke-width:1" d="M0.5,5.5 h3 l2,-3 l4,6 l4,-6 l4,6 l4,-6 l4,6 l2,-3 h3"/>
+  </g>
+  <g width="30" height="10" id="capacitor">
+    <path style="fill:none;stroke:black;stroke-width:1" d="M0.5,5.5 h13 m0,-7 v14 m4,0 v-14 m0,7 h13"/>
+  </g>
+  <g width="30" height="10" id="inductance">
+    <path style="fill:none;stroke:black;stroke-width:1" d="M0.5,5.5 h0.7 a5,10,0,0,1,9.3,5 a5,10,0,0,1,10,0 a5,10,0,0,1,9.3,-5 h0.7"/>
+  </g>
+  <g width="30" height="10" id="diode">
+    <path style="fill:none;stroke:black;stroke-width:1" d="M0.5,5.5 h10 v-5 l10,5 l-10,5 v-5 m10,-6 v12 m0,-6 h10"/>
+  </g>
+  <g width="30" height="10" id="schottky">
+    <path style="fill:none;stroke:black;stroke-width:1" d="M0.5,5.5 h10 v-5 l10,5 l-10,5 v-5 m7,-4 v-2 h3 v12 h3 v-2 m-3,-4 h10"/>
+  </g>
+  <g width="30" height="10" id="zener">
+    <path style="fill:none;stroke:black;stroke-width:1" d="M0.5,5.5 h10 v-5 l10,5 l-10,5 v-5 m7,-6 h3 v12 m0,-6 h10"/>
+  </g>
+  <marker id="arrow4x4-0" orient="auto" markerHeight="4" markerWidth="4" refX="4" refY="2"><path d="M0,0 L4,2 L0,4 Z"/></marker>
+  <marker id="reversearrow4x4-0" orient="auto" markerHeight="4" markerWidth="4" refX="0" refY="2"><path d="M0,2 L4,4 L4,0 Z"/></marker>
+  <g width="30" height="20" id="led">
+    <path style="fill:none;stroke:black;stroke-width:1;marker-start:url(#reversearrow4x4-0);marker-end:url(#arrow4x4-0)" d="M20.5,0.5 l-6,6     M0.5,15.5 h10 v-5 l10,5 l-10,5 v-5 m10,-6 v12 m0,-6 h10     M17.5,9.5 l6,-6"/>
+  </g>
+  <g width="30" height="20" id="photodiode">
+    <path style="fill:none;stroke:black;stroke-width:1;marker-start:url(#reversearrow4x4-0);marker-end:url(#arrow4x4-0)" d="M17.5,9.5 l6,-6     M0.5,15.5 h10 v-5 l10,5 l-10,5 v-5 m10,-6 v12 m0,-6 h10     M20.5,0.5 l-6,6"/>
+  </g>
+  <g width="30" height="20" id="relay">
+    <path style="fill:none;stroke:black;stroke-width:1" d="M2.5,2.5 h26 v16 h-26 v-16     M0.5,5.5 h4 a2.5,2.5,0,0,1,0,5 a2.5,2.5,0,0,1,0,5 h-4     M15.5,0.5 v4 a1.5,1.5,0,0,1,0,3 a1.5,1.5,0,0,1,0,-3 m0,3 l3,7 m-8,1 a1.5,1.5,0,0,1,0,-3 a1.5,1.5,0,0,1,0,3 v5 m10,-5 a1.5,1.5,0,0,1,0,-3 a1.5,1.5,0,0,1,0,3 v5"/>
+  </g>
+  <marker id="arrow7x6-0" orient="auto" markerHeight="6" markerWidth="7" refX="7" refY="3"><path d="M0,0 L7,3 L0,6 Z"/></marker>
+  <marker id="arrow7x6-7" orient="auto" markerHeight="6" markerWidth="7" refX="14" refY="3"><path d="M0,0 L7,3 L0,6 Z"/></marker>
+  <g width="30" height="30" id="pnp">
+    <path style="fill:none;stroke:black;stroke-width:1;marker-end:url(#arrow7x6-0)" d="M4.5,15.5 a11,11,0,0,1,22,0 a11,11,0,0,1,-22,0     M15.5,0.5 v12 m7,0 h-14     m5,0 l-8,18 m20,0 l-8,-18"/>
+  </g>
+  <g width="30" height="30" id="npn">
+    <path style="fill:none;stroke:black;stroke-width:1;marker-end:url(#arrow7x6-7)" d="M4.5,15.5 a11,11,0,0,1,22,0 a11,11,0,0,1,-22,0     M15.5,0.5 v12 m-7,0 h14     m-5,0 l8,18 m-12,-18 l-8,18"/>
+  </g>
+  <g width="30" height="30" id="n-fet">
+    <path style="fill:none;stroke:black;stroke-width:1;marker-end:url(#arrow7x6-0)" d="M4.5,15.5 a11,11,0,0,1,22,0 a11,11,0,0,1,-22,0     M7.5,17.5 h16     M20.5,30.5 v-13     M10.5,30.5 v-13     M10.5,0.5 v17"/>
+  </g>
+  <g width="30" height="30" id="p-fet">
+    <path style="fill:none;stroke:black;stroke-width:1;marker-end:url(#arrow7x6-7)" d="M4.5,15.5 a11,11,0,0,1,22,0 a11,11,0,0,1,-22,0     M7.5,17.5 h16     M20.5,30.5 v-13     M10.5,30.5 v-13     M10.5,17.5 v-17"/>
+  </g>
+  <g width="30" height="30" id="n-mosfet">
+    <path style="fill:none;stroke:black;stroke-width:1;marker-end:url(#arrow7x6-0)" d="M4.5,15.5 a11,11,0,0,1,22,0 a11,11,0,0,1,-22,0     M10.5,0.5 v12 h10     M7.5,15.5 h16     M20.5,30.5 v-15     M10.5,30.5 v-15     M10.5,24.5 h5 v-9"/>
+  </g>
+  <g width="30" height="30" id="p-mosfet">
+    <path style="fill:none;stroke:black;stroke-width:1;marker-end:url(#arrow7x6-0)" d="M4.5,15.5 a11,11,0,0,1,22,0 a11,11,0,0,1,-22,0     M10.5,0.5 v12 h10     M7.5,15.5 h16     M20.5,30.5 v-15     M10.5,30.5 v-15     M10.5,24.5 h5 m0,-9 v9"/>
+  </g>
+</defs>
+  <text x="5" y="15">30x10</text>
+  <g transform="translate(0,35)"><use xlink:href="#connector"/><text x="5" y="-5" font-size="10">Connector</text></g>
+  <g transform="translate(0,65)"><use xlink:href="#connector1"/><text x="5" y="-5" font-size="10">Connector female</text></g>
+  <g transform="translate(0,95)"><use xlink:href="#connector2"/><text x="5" y="-5" font-size="10">Connector male</text></g>
+  <g transform="translate(0,125)"><use xlink:href="#button-open"/><text x="5" y="-5" font-size="10">Button open</text></g>
+  <g transform="translate(0,155)"><use xlink:href="#button-closed"/><text x="5" y="-5" font-size="10">Button closed</text></g>
+  <g transform="translate(0,185)"><use xlink:href="#switch3"/><text x="5" y="-5" font-size="10">Switch</text></g>
+  <g transform="translate(0,215)"><use xlink:href="#resistor"/><text x="5" y="-5" font-size="10">Resistor</text></g>
+  <g transform="translate(0,245)"><use xlink:href="#capacitor"/><text x="5" y="-5" font-size="10">Capacitor</text></g>
+  <g transform="translate(0,275)"><use xlink:href="#inductance"/><text x="5" y="-5" font-size="10">Inductance</text></g>
+  <g transform="translate(0,305)"><use xlink:href="#diode"/><text x="5" y="-5" font-size="10">Diode</text></g>
+  <g transform="translate(0,335)"><use xlink:href="#schottky"/><text x="5" y="-5" font-size="10">Schottky diode</text></g>
+  <g transform="translate(0,365)"><use xlink:href="#zener"/><text x="5" y="-5" font-size="10">Zener diode</text></g>
+
+  <text x="75" y="15">30x20</text>
+  <g transform="translate(70,35)"><use xlink:href="#led"/><text x="5" y="-5" font-size="10">LED</text></g>
+  <g transform="translate(70,75)"><use xlink:href="#photodiode"/><text x="5" y="-5" font-size="10">Photodiode</text></g>
+  <g transform="translate(70,115)"><use xlink:href="#relay"/><text x="5" y="-5" font-size="10">Relay</text></g>
+
+  <text x="135" y="15">30x30</text>
+  <g transform="translate(130,35)"><use xlink:href="#pnp"/><text x="5" y="-5" font-size="10">P-N-P transistor</text></g>
+  <g transform="translate(130,85)"><use xlink:href="#npn"/><text x="5" y="-5" font-size="10">N-P-N transistor</text></g>
+  <g transform="translate(130,135)"><use xlink:href="#n-fet"/><text x="5" y="-5" font-size="10">N-FET</text></g>
+  <g transform="translate(130,185)"><use xlink:href="#p-fet"/><text x="5" y="-5" font-size="10">P-FET</text></g>
+  <g transform="translate(130,235)"><use xlink:href="#n-mosfet"/><text x="5" y="-5" font-size="10">N-MOSFET</text></g>
+  <g transform="translate(130,285)"><use xlink:href="#p-mosfet"/><text x="5" y="-5" font-size="10">P-MOSFET</text></g>
+</svg>
